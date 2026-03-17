@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vermjil Detail - California commercial trucking insurance for AL, PD, MTC. Get a free quote today.">
+  <title>Vermjil Detail - Commercial Trucking Insurance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --color-primary: #3E2723; /* dark brown */
+      --color-secondary: #5D4037; /* medium dark brown */
+      --color-accent: #8D6E63; /* light brown */
+      --color-light: #D7CCC8; /* very light brown */
+      --color-bg: #FAFAFA; /* off-white */
+      --color-text: #333333;
+      --color-white: #FFFFFF;
+      --shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: var(--color-text);
+      background-color: var(--color-bg);
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container {
+      width: 95%;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    /* Header */
+    header {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      color: var(--color-accent);
+    }
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    .nav-links a {
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+      position: relative;
+    }
+    .nav-links a:hover {
+      color: var(--color-light);
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--color-light);
+      transition: width 0.3s;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+    .nav-links .btn-nav {
+      background-color: var(--color-secondary);
+      padding: 8px 20px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .nav-links .btn-nav:hover {
+      background-color: var(--color-accent);
+    }
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      color: white;
+      margin-top: 70px;
+      padding: 2rem 0;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(62, 39, 35, 0.85) 0%, rgba(93, 64, 55, 0.8) 100%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 3.8rem;
+      margin-bottom: 1.2rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2.5rem;
+      opacity: 0.95;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn {
+      display: inline-block;
+      background-color: var(--color-secondary);
+      color: white;
+      padding: 16px 40px;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      border: 2px solid var(--color-secondary);
+      margin: 0.5rem;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: var(--color-accent);
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(141, 110, 99, 0.3);
+    }
+    .btn-outline {
+      background-color: transparent;
+      color: white;
+    }
+    .btn-outline:hover {
+      background-color: white;
+      color: var(--color-primary);
+    }
+    /* Quote Form Section */
+    .quote-section {
+      padding: 3rem 0 6rem;
+      background-color: var(--color-bg);
+    }
+    .quote-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .quote-header {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .quote-header h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .quote-header p {
+      opacity: 0.9;
+      font-size: 1.1rem;
+    }
+    .quote-form {
+      padding: 2rem;
+    }
+    .form-section {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--color-light);
+    }
+    .form-section:last-of-type {
+      border-bottom: none;
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      color: var(--color-primary);
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--color-accent);
+      display: inline-block;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.2rem;
+      margin-bottom: 1.2rem;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+      color: var(--color-primary);
+      font-size: 0.95rem;
+    }
+    .required:after {
+      content: " *";
+      color: #d32f2f;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--color-light);
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: border-color 0.3s;
+      background-color: #fff;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--color-secondary);
+      box-shadow: 0 0 0 3px rgba(93, 64, 55, 0.1);
+    }
+    .form-group textarea {
+      height: 80px;
+      resize: vertical;
+    }
+    .date-input-group {
+      position: relative;
+    }
+    .date-input-group input {
+      padding-left: 35px;
+    }
+    .date-input-group:before {
+      content: "\f073";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--color-accent);
+      font-size: 0.9rem;
+    }
+    .radio-group {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    .radio-group label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 400;
+      cursor: pointer;
+    }
+    .radio-group input[type="radio"] {
+      width: auto;
+      margin: 0;
+    }
+    .checkbox-group {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 1.2rem 0;
+      padding: 0.8rem;
+      background-color: var(--color-bg);
+      border-radius: 4px;
+    }
+    .checkbox-group input[type="checkbox"] {
+      margin-top: 3px;
+      width: 18px;
+      height: 18px;
+    }
+    .checkbox-group label {
+      font-weight: 400;
+      color: var(--color-text);
+      line-height: 1.5;
+      font-size: 0.95rem;
+    }
+    .form-note {
+      font-size: 0.85rem;
+      color: var(--color-accent);
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+    .submit-btn {
+      background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+      color: white;
+      border: none;
+      padding: 16px 40px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    .submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(62, 39, 35, 0.25);
+    }
+    /* Tables */
+    .form-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+    .form-table th,
+    .form-table td {
+      border: 1px solid var(--color-light);
+      padding: 8px;
+      text-align: left;
+    }
+    .form-table th {
+      background-color: var(--color-light);
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+    .form-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .form-table input,
+    .form-table select {
+      width: 100%;
+      padding: 6px 8px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      font-size: 0.9rem;
+    }
+    .form-table input:focus,
+    .form-table select:focus {
+      outline: none;
+      border-color: var(--color-secondary);
+      box-shadow: 0 0 0 2px rgba(93, 64, 55, 0.1);
+    }
+    .table-header {
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+    /* Success Message */
+    .success-message {
+      display: none;
+      background-color: #E8F5E9;
+      color: #2E7D32;
+      padding: 1.2rem;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+      text-align: center;
+      border: 1px solid #C8E6C9;
+      font-size: 1.05rem;
+    }
+    .success-message.show {
+      display: block;
+      animation: fadeIn 0.5s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Sections */
+    section {
+      padding: 5rem 0;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .section-title h2 {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+    .section-title p {
+      color: var(--color-secondary);
+      font-size: 1.1rem;
+    }
+    /* Services */
+    .services {
+      background-color: white;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+    }
+    .service-card {
+      background: var(--color-bg);
+      padding: 2.5rem 2rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid var(--color-light);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+    .service-card i {
+      font-size: 3.5rem;
+      color: var(--color-secondary);
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .service-card h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: var(--color-primary);
+    }
+    /* About */
+    .about {
+      background-color: var(--color-bg);
+    }
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .about-content p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: var(--color-text);
+    }
+    /* Contact */
+    .contact {
+      background-color: white;
+    }
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+    }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      min-width: 250px;
+    }
+    .contact-item i {
+      color: var(--color-secondary);
+      font-size: 1.8rem;
+      margin-top: 5px;
+    }
+    .contact-item div h4 {
+      margin-bottom: 0.3rem;
+      color: var(--color-primary);
+      font-size: 1.2rem;
+    }
+    .contact-item div p {
+      color: var(--color-text);
+    }
+    .contact-item a {
+      color: var(--color-secondary);
+      transition: color 0.3s;
+    }
+    .contact-item a:hover {
+      color: var(--color-primary);
+      text-decoration: underline;
+    }
+    /* Footer */
+    footer {
+      background-color: var(--color-primary);
+      color: white;
+      padding: 3rem 0 1.5rem;
+    }
+    .footer-content {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .footer-logo {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+    .footer-logo span {
+      color: var(--color-accent);
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin: 1.5rem 0;
+    }
+    .footer-links a {
+      color: var(--color-light);
+      transition: color 0.3s;
+    }
+    .footer-links a:hover {
+      color: white;
+    }
+    .footer-bottom {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      text-align: center;
+      color: var(--color-light);
+      font-size: 0.9rem;
+    }
+    /* Responsive */
+    @media (max-width: 992px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: block;
+      }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--color-primary);
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1.1rem;
+      }
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+      .section-title h2 {
+        font-size: 2rem;
+      }
+      .quote-header {
+        padding: 1.5rem;
+      }
+      .quote-form {
+        padding: 1.5rem;
+      }
+      .form-table {
+        font-size: 0.85rem;
+      }
+      .form-table th,
+      .form-table td {
+        padding: 6px 4px;
+      }
+      .form-table input,
+      .form-table select {
+        padding: 4px 6px;
+        font-size: 0.85rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .btn {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+        text-align: center;
+      }
+      .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+      .form-table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+    /* Print styles */
+    @media print {
+      header, footer, .btn, .submit-btn {
+        display: none;
+      }
+      .quote-section {
+        padding: 0;
+      }
+      .quote-container {
+        box-shadow: none;
+        border: 1px solid #ddd;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">Vermjil <span>Detail</span></div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#quote" class="btn-nav">Get a Quote</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Vermjil Detail</h1>
+      <p>Your trusted commercial trucking insurance partner in California. Get comprehensive coverage for Auto Liability, Property Damage, and Medical insurance.</p>
+      <a href="#quote" class="btn">Get a Free Quote</a>
+      <a href="#services" class="btn btn-outline">Our Services</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Us</h2>
+        <p>California's trusted commercial insurance experts</p>
+      </div>
+      <div class="about-content">
+        <p>Vermjil Detail is a premier insurance agency based in California, dedicated to providing comprehensive coverage solutions for commercial trucking businesses. With a focus on Auto Liability (AL), Property Damage (PD), and Medical (MTC) insurance, we help protect your fleet, drivers, and business.</p>
+        <p>Our experienced team works closely with clients to understand their unique needs, offering personalized policies that deliver peace of mind. We are committed to excellence, integrity, and outstanding customer service.</p>
+        <p>Serving all of California with local expertise and national coverage options for commercial trucking operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Insurance Services</h2>
+        <p>Comprehensive coverage for commercial trucking</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h3>Auto Liability (AL)</h3>
+          <p>Required coverage for bodily injury and property damage caused by your commercial vehicles. Protects your business from financial loss in accidents.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-building-shield"></i>
+          <h3>Property Damage (PD)</h3>
+          <p>Comprehensive coverage for your trucks, trailers, and other property against collision, theft, fire, vandalism, and natural disasters.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-notes-medical"></i>
+          <h3>Medical (MTC)</h3>
+          <p>Medical payments and personal injury protection for drivers and passengers. Covers medical expenses regardless of fault.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote" class="quote-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Commercial Trucking Quote Request</h2>
+        <p>Fill out the form below for a personalized insurance quote</p>
+      </div>
+      <div class="quote-container">
+        <div class="quote-header">
+          <h2>Insurance Quote Application</h2>
+          <p>Complete all sections for accurate pricing</p>
+        </div>
+        <form id="quoteForm" class="quote-form" action="https://formspree.io/f/your-form-id" method="POST">
+          <!-- GENERAL INFORMATION -->
+          <div class="form-section">
+            <h3 class="section-title">GENERAL INFORMATION</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="agencyName" class="required">Agency Name</label>
+                <input type="text" id="agencyName" name="agencyName" required>
+              </div>
+              <div class="form-group">
+                <label for="agentName" class="required">Agent Name</label>
+                <input type="text" id="agentName" name="agentName" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="agencyPhone" class="required">Agency Phone</label>
+                <input type="tel" id="agencyPhone" name="agencyPhone" required placeholder="(555) 123-4567">
+              </div>
+              <div class="form-group date-input-group">
+                <label for="effectiveDate" class="required">Requested Effective Date</label>
+                <input type="date" id="effectiveDate" name="effectiveDate" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="mcNumber">MC Number</label>
+                <input type="text" id="mcNumber" name="mcNumber">
+              </div>
+              <div class="form-group">
+                <label for="dotNumber">DOT Number</label>
+                <input type="text" id="dotNumber" name="dotNumber">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="namedInsured" class="required">Named Insured</label>
+                <input type="text" id="namedInsured" name="namedInsured" required>
+              </div>
+              <div class="form-group">
+                <label for="mailingAddress" class="required">Mailing Address</label>
+                <input type="text" id="mailingAddress" name="mailingAddress" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city" class="required">City</label>
+                <input type="text" id="city" name="city" required>
+              </div>
+              <div class="form-group">
+                <label for="state" class="required">State</label>
+                <select id="state" name="state" required>
+                  <option value="" disabled selected>Select State</option>
+                  <option value="CA">California</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="NV">Nevada</option>
+                  <option value="OR">Oregon</option>
+                  <option value="WA">Washington</option>
+                  <option value="TX">Texas</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="zip" class="required">Zip</label>
+                <input type="text" id="zip" name="zip" required pattern="[0-9]{5}">
+              </div>
+              <div class="form-group">
+                <label for="ownerName" class="required">Owner's Name</label>
+                <input type="text" id="ownerName" name="ownerName" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="required">Is Owner a Driver?</label>
+                <div class="radio-group">
+                  <label>
+                    <input type="radio" name="ownerDriver" value="yes" required> Yes
+                  </label>
+                  <label>
+                    <input type="radio" name="ownerDriver" value="no" required> No
+                  </label>
+                </div>
+              </div>
+              <div class="form-group date-input-group" id="ownerDobGroup" style="display: none;">
+                <label for="ownerDob">Owner DOB</label>
+                <input type="date" id="ownerDob" name="ownerDob">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ownerPhone">Owner Phone</label>
+                <input type="tel" id="ownerPhone" name="ownerPhone" placeholder="(555) 123-4567">
+              </div>
+              <div class="form-group">
+                <label for="ownerLicense">Owner License #</label>
+                <input type="text" id="ownerLicense" name="ownerLicense">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email" class="required">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group date-input-group">
+                <label for="businessStartDate">Date Business Started</label>
+                <input type="date" id="businessStartDate" name="businessStartDate">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="commoditiesHauled">Commodities Hauled (%)</label>
+                <input type="text" id="commoditiesHauled" name="commoditiesHauled" placeholder="e.g., 50% Grain, 50% General">
+              </div>
+              <div class="form-group">
+                <label for="radiusOperations">Radius of Operations</label>
+                <select id="radiusOperations" name="radiusOperations">
+                  <option value="" disabled selected>Select radius</option>
+                  <option value="0-100">0–100 miles</option>
+                  <option value="101-300">101–300 miles</option>
+                  <option value="301-500">301–500 miles</option>
+                  <option value="500+">500+ miles</option>
+                  <option value="interstate">Interstate</option>
+                  <option value="intrastate">Intrastate</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- INSURANCE COVERAGE -->
+          <div class="form-section">
+            <h3 class="section-title">INSURANCE COVERAGE</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="autoLiabilityLimit" class="required">Auto Liability Limit</label>
+                <select id="autoLiabilityLimit" name="autoLiabilityLimit" required>
+                  <option value="" disabled selected>Select limit</option>
+                  <option value="750000">$750,000</option>
+                  <option value="1000000">$1,000,000</option>
+                  <option value="1500000">$1,500,000</option>
+                  <option value="2000000">$2,000,000</option>
+                  <option value="5000000">$5,000,000</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>UM/UIM</label>
+                <select name="umUim">
+                  <option value="" disabled selected>Select limit</option>
+                  <option value="same-as-al">Same as AL</option>
+                  <option value="250000">$250,000</option>
+                  <option value="500000">$500,000</option>
+                  <option value="1000000">$1,000,000</option>
+                  <option value="none">None</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Med Pay / PIP</label>
+                <select name="medPay">
+                  <option value="" disabled selected>Select limit</option>
+                  <option value="5000">$5,000</option>
+                  <option value="10000">$10,000</option>
+                  <option value="25000">$25,000</option>
+                  <option value="50000">$50,000</option>
+                  <option value="100000">$100,000</option>
+                  <option value="none">None</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="physicalDamageDeductible" class="required">Physical Damage Deductible</label>
+                <select id="physicalDamageDeductible" name="physicalDamageDeductible" required>
+                  <option value="" disabled selected>Select deductible</option>
+                  <option value="0">$0</option>
+                  <option value="500">$500</option>
+                  <option value="1000">$1,000</option>
+                  <option value="2500">$2,500</option>
+                  <option value="5000">$5,000</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>General Liability Limit</label>
+                <select name="generalLiabilityLimit">
+                  <option value="" disabled selected>Select limit</option>
+                  <option value="300000">$300,000</option>
+                  <option value="500000">$500,000</option>
+                  <option value="1000000">$1,000,000</option>
+                  <option value="2000000">$2,000,000</option>
+                  <option value="5000000">$5,000,000</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Non-Owned Limit</label>
+                <select name="nonOwnedLimit">
+                  <option value="" disabled selected>Select limit</option>
+                  <option value="same-as-gl">Same as GL</option>
+                  <option value="300000">$300,000</option>
+                  <option value="500000">$500,000</option>
+                  <option value="1000000">$1,000,000</option>
+                  <option value="none">None</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Trailer Interchange</label>
+                <select name="trailerInterchange">
+                  <option value="" disabled selected>Select limit</option>
+                  <option value="75000">$75,000</option>
+                  <option value="100000">$100,000</option>
+                  <option value="150000">$150,000</option>
+                  <option value="200000">$200,000</option>
+                  <option value="none">None</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="cargoLimit" class="required">Cargo Limit</label>
+                <select id="cargoLimit" name="cargoLimit" required>
+                  <option value="" disabled selected>Select limit</option>
+                  <option value="50000">$50,000</option>
+                  <option value="75000">$75,000</option>
+                  <option value="100000">$100,000</option>
+                  <option value="150000">$150,000</option>
+                  <option value="200000">$200,000</option>
+                  <option value="250000">$250,000</option>
+                  <option value="500000">$500,000</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cargoDeductible">Cargo Deductible</label>
+                <select id="cargoDeductible" name="cargoDeductible">
+                  <option value="" disabled selected>Select deductible</option>
+                  <option value="0">$0</option>
+                  <option value="250">$250</option>
+                  <option value="500">$500</option>
+                  <option value="1000">$1,000</option>
+                  <option value="2500">$2,500</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Reefer Breakdown</label>
+                <select name="reeferBreakdown">
+                  <option value="" disabled selected>Select limit</option>
+                  <option value="25000">$25,000</option>
+                  <option value="50000">$50,000</option>
+                  <option value="75000">$75,000</option>
+                  <option value="100000">$100,000</option>
+                  <option value="none">None</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- VEHICLES -->
+          <div class="form-section">
+            <h3 class="section-title">VEHICLES (Up to 5)</h3>
+            <table class="form-table" id="vehiclesTable">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Year</th>
+                  <th>Make</th>
+                  <th>Model</th>
+                  <th>GVW</th>
+                  <th>VIN</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-header">1</td>
+                  <td><input type="text" name="vehicle1_year" placeholder="2020"></td>
+                  <td><input type="text" name="vehicle1_make" placeholder="Freightliner"></td>
+                  <td><input type="text" name="vehicle1_model" placeholder="Cascadia"></td>
+                  <td><input type="text" name="vehicle1_gvw" placeholder="80000"></td>
+                  <td><input type="text" name="vehicle1_vin" placeholder="1FUJGLD5XLM123456"></td>
+                  <td><input type="text" name="vehicle1_value" placeholder="$75,000"></td>
+                </tr>
+                <tr>
+                  <td class="table-header">2</td>
+                  <td><input type="text" name="vehicle2_year"></td>
+                  <td><input type="text" name="vehicle2_make"></td>
+                  <td><input type="text" name="vehicle2_model"></td>
+                  <td><input type="text" name="vehicle2_gvw"></td>
+                  <td><input type="text" name="vehicle2_vin"></td>
+                  <td><input type="text" name="vehicle2_value"></td>
+                </tr>
+                <tr>
+                  <td class="table-header">3</td>
+                  <td><input type="text" name="vehicle3_year"></td>
+                  <td><input type="text" name="vehicle3_make"></td>
+                  <td><input type="text" name="vehicle3_model"></td>
+                  <td><input type="text" name="vehicle3_gvw"></td>
+                  <td><input type="text" name="vehicle3_vin"></td>
+                  <td><input type="text" name="vehicle3_value"></td>
+                </tr>
+                <tr>
+                  <td class="table-header">4</td>
+                  <td><input type="text" name="vehicle4_year"></td>
+                  <td><input type="text" name="vehicle4_make"></td>
+                  <td><input type="text" name="vehicle4_model"></td>
+                  <td><input type="text" name="vehicle4_gvw"></td>
+                  <td><input type="text" name="vehicle4_vin"></td>
+                  <td><input type="text" name="vehicle4_value"></td>
+                </tr>
+                <tr>
+                  <td class="table-header">5</td>
+                  <td><input type="text" name="vehicle5_year"></td>
+                  <td><input type="text" name="vehicle5_make"></td>
+                  <td><input type="text" name="vehicle5_model"></td>
+                  <td><input type="text" name="vehicle5_gvw"></td>
+                  <td><input type="text" name="vehicle5_vin"></td>
+                  <td><input type="text" name="vehicle5_value"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- DRIVERS -->
+          <div class="form-section">
+            <h3 class="section-title">DRIVERS (Up to 5)</h3>
+            <table class="form-table" id="driversTable">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>DOB</th>
+                  <th>CDL Experience</th>
+                  <th>Date of Hire</th>
+                  <th>License #</th>
+                  <th>Accidents / Violations</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-header">1</td>
+                  <td><input type="text" name="driver1_name" placeholder="John Doe"></td>
+                  <td class="date-input-group"><input type="date" name="driver1_dob"></td>
+                  <td><input type="text" name="driver1_cdlExperience" placeholder="5 years"></td>
+                  <td class="date-input-group"><input type="date" name="driver1_hireDate"></td>
+                  <td><input type="text" name="driver1_license" placeholder="D12345678"></td>
+                  <td><input type="text" name="driver1_accidents" placeholder="None / Details"></td>
+                </tr>
+                <tr>
+                  <td class="table-header">2</td>
+                  <td><input type="text" name="driver2_name"></td>
+                  <td class="date-input-group"><input type="date" name="driver2_dob"></td>
+                  <td><input type="text" name="driver2_cdlExperience"></td>
+                  <td class="date-input-group"><input type="date" name="driver2_hireDate"></td>
+                  <td><input type="text" name="driver2_license"></td>
+                  <td><input type="text" name="driver2_accidents"></td>
+                </tr>
+                <tr>
+                  <td class="table-header">3</td>
+                  <td><input type="text" name="driver3_name"></td>
+                  <td class="date-input-group"><input type="date" name="driver3_dob"></td>
+                  <td><input type="text" name="driver3_cdlExperience"></td>
+                  <td class="date-input-group"><input type="date" name="driver3_hireDate"></td>
+                  <td><input type="text" name="driver3_license"></td>
+                  <td><input type="text" name="driver3_accidents"></td>
+                </tr>
+                <tr>
+                  <td class="table-header">4</td>
+                  <td><input type="text" name="driver4_name"></td>
+                  <td class="date-input-group"><input type="date" name="driver4_dob"></td>
+                  <td><input type="text" name="driver4_cdlExperience"></td>
+                  <td class="date-input-group"><input type="date" name="driver4_hireDate"></td>
+                  <td><input type="text" name="driver4_license"></td>
+                  <td><input type="text" name="driver4_accidents"></td>
+                </tr>
+                <tr>
+                  <td class="table-header">5</td>
+                  <td><input type="text" name="driver5_name"></td>
+                  <td class="date-input-group"><input type="date" name="driver5_dob"></td>
+                  <td><input type="text" name="driver5_cdlExperience"></td>
+                  <td class="date-input-group"><input type="date" name="driver5_hireDate"></td>
+                  <td><input type="text" name="driver5_license"></td>
+                  <td><input type="text" name="driver5_accidents"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- LOSSES -->
+          <div class="form-section">
+            <h3 class="section-title">LOSSES (Last 3 Years)</h3>
+            <table class="form-table" id="lossesTable">
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>Liability</th>
+                  <th>Physical Damage</th>
+                  <th>Cargo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-header">Current</td>
+                  <td><input type="text" name="loss_current_liability" placeholder="Amount / None"></td>
+                  <td><input type="text" name="loss_current_physical" placeholder="Amount / None"></td>
+                  <td><input type="text" name="loss_current_cargo" placeholder="Amount / None"></td>
+                </tr>
+                <tr>
+                  <td class="table-header">1st Prior</td>
+                  <td><input type="text" name="loss_prior1_liability"></td>
+                  <td><input type="text" name="loss_prior1_physical"></td>
+                  <td><input type="text" name="loss_prior1_cargo"></td>
+                </tr>
+                <tr>
+                  <td class="table-header">2nd Prior</td>
+                  <td><input type="text" name="loss_prior2_liability"></td>
+                  <td><input type="text" name="loss_prior2_physical"></td>
+                  <td><input type="text" name="loss_prior2_cargo"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- TERMS -->
+          <div class="form-section">
+            <div class="checkbox-group">
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent">I hereby certify that the above information is true and correct to the best of my knowledge. I understand that any willful misstatement or omission of material fact may be considered fraud and may result in the denial or rescission of coverage. I authorize the release of loss information and driver records (MVRs) for the drivers listed above. *</label>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">I agree to the <a href="#" style="color: var(--color-secondary); text-decoration: underline;">terms and conditions</a> and consent to be contacted regarding my insurance inquiry. *</label>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Quote Request</button>
+          
+          <div id="successMessage" class="success-message">
+            <i class="fa-solid fa-check-circle" style="margin-right: 8px;"></i>
+            Thank you! Your quote request has been submitted. We'll contact you within 24 hours.
+          </div>
+          
+          <p class="form-note">* Required fields. By submitting this form, you agree to our privacy policy. Vermjil Detail is an equal opportunity provider.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>Reach out directly or visit our office</p>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Office Address</h4>
+            <p>123 Insurance Avenue, Suite 200<br>Los Angeles, CA 90001</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <h4>Phone</h4>
+            <p><a href="tel:+13105551234">(310) 555-1234</a></p>
+            <p><a href="tel:+18185551234">(818) 555-1234</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:quotes@vermjildetail.com">quotes@vermjildetail.com</a></p>
+            <p><a href="mailto:support@vermjildetail.com">support@vermjildetail.com</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <h4>Business Hours</h4>
+            <p>Monday - Friday: 8am - 6pm<br>Saturday: 9am - 2pm<br>Sunday: Closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Vermjil <span>Detail</span></div>
+        <p>California's trusted commercial trucking insurance provider for Auto Liability, Property Damage, and Medical coverage.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#quote">Get a Quote</a>
+          <a href="#contact">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Vermjil Detail. All rights reserved. | California License #0C12345</p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem; opacity: 0.8;">Serving all California counties. Specializing in commercial trucking, logistics, and transportation insurance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const headerOffset = 80;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+          
+          // Close mobile menu if open
+          if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+          }
+        }
+      });
+    });
+
+    // Show/hide Owner DOB field based on "Is Owner a Driver?" selection
+    const ownerDriverRadios = document.querySelectorAll('input[name="ownerDriver"]');
+    const ownerDobGroup = document.getElementById('ownerDobGroup');
+    
+    ownerDriverRadios.forEach(radio => {
+      radio.addEventListener('change', function() {
+        if (this.value === 'yes') {
+          ownerDobGroup.style.display = 'block';
+          document.getElementById('ownerDob').required = true;
+        } else {
+          ownerDobGroup.style.display = 'none';
+          document.getElementById('ownerDob').required = false;
+        }
+      });
+    });
+
+    // Form submission handling
+    const quoteForm = document.getElementById('quoteForm');
+    const successMessage = document.getElementById('successMessage');
+    
+    if (quoteForm) {
+      quoteForm.addEventListener('submit', function(e) {
+        // For demo purposes - the form will submit to Formspree
+        // To test without Formspree, uncomment below:
+        /*
+        e.preventDefault();
+        successMessage.classList.add('show');
+        quoteForm.reset();
+        setTimeout(() => {
+          successMessage.classList.remove('show');
+        }, 5000);
+        */
+      });
+    }
+
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 100) {
+        header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
+        header.style.padding = '0.7rem 0';
+      } else {
+        header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        header.style.padding = '1rem 0';
+      }
+    });
+
+    // Prevent negative numbers in value fields
+    document.querySelectorAll('input[type="text"]').forEach(input => {
+      if (input.name.includes('Value') || input.name.includes('gvw') || input.name.includes('Deductible') || input.name.includes('Limit')) {
+        input.addEventListener('input', function() {
+          // Remove non-numeric characters except $ and commas
+          this.value = this.value.replace(/[^0-9$,]/g, '');
+        });
+      }
+    });
+
+    // Set minimum date for date fields to today
+    const today = new Date().toISOString().split('T')[0];
+    document.querySelectorAll('input[type="date"]').forEach(input => {
+      if (input.id !== 'ownerDob' || input.id !== 'businessStartDate') {
+        input.min = today;
+      }
+    });
+  </script>
+</body>
+</html>
